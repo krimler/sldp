@@ -1,0 +1,78 @@
+{
+  "N": 200,
+  "M": 16,
+  "N_TRIALS": 2,
+  "device_classes": 5,
+  "rare_class_prevalence": 0.03,
+  "dap_baseline": {
+    "attack_accuracy_mean": 0.9833333333333333,
+    "attack_accuracy_ci": 0.0,
+    "rare_class_auc_mean": 0.9872150789012274,
+    "n_unique_patterns_mean": 136.5,
+    "singleton_fraction_mean": 0.5625,
+    "median_anon_set_mean": 1.0
+  },
+  "sldp_curve": [
+    {
+      "eps_s": 0.25,
+      "attack_accuracy_mean": 0.3333333333333333,
+      "attack_accuracy_ci": 0.032666666666666656,
+      "rare_class_auc_mean": 0.5662624196376389,
+      "rare_class_auc_ci": 0.48470192869666856,
+      "n_unique_patterns_mean": 199.0,
+      "singleton_fraction_mean": 0.99,
+      "median_anon_set_mean": 1.0
+    },
+    {
+      "eps_s": 0.5,
+      "attack_accuracy_mean": 0.44166666666666665,
+      "attack_accuracy_ci": 0.04899999999999999,
+      "rare_class_auc_mean": 0.7376534190531853,
+      "rare_class_auc_ci": 0.38131794272355335,
+      "n_unique_patterns_mean": 199.5,
+      "singleton_fraction_mean": 0.995,
+      "median_anon_set_mean": 1.0
+    },
+    {
+      "eps_s": 1.0,
+      "attack_accuracy_mean": 0.6166666666666667,
+      "attack_accuracy_ci": 0.0,
+      "rare_class_auc_mean": 0.548363530099357,
+      "rare_class_auc_ci": 0.31072472238457044,
+      "n_unique_patterns_mean": 200.0,
+      "singleton_fraction_mean": 1.0,
+      "median_anon_set_mean": 1.0
+    },
+    {
+      "eps_s": 2.0,
+      "attack_accuracy_mean": 0.925,
+      "attack_accuracy_ci": 0.016333333333333384,
+      "rare_class_auc_mean": 0.9137931034482758,
+      "rare_class_auc_ci": 0.16896551724137931,
+      "n_unique_patterns_mean": 189.0,
+      "singleton_fraction_mean": 0.9075,
+      "median_anon_set_mean": 1.0
+    },
+    {
+      "eps_s": 4.0,
+      "attack_accuracy_mean": 0.9666666666666667,
+      "attack_accuracy_ci": 0.0,
+      "rare_class_auc_mean": 0.9872150789012274,
+      "rare_class_auc_ci": 0.00816189362945645,
+      "n_unique_patterns_mean": 150.0,
+      "singleton_fraction_mean": 0.64,
+      "median_anon_set_mean": 1.0
+    },
+    {
+      "eps_s": 8.0,
+      "attack_accuracy_mean": 0.9833333333333333,
+      "attack_accuracy_ci": 0.0,
+      "rare_class_auc_mean": 0.9872150789012274,
+      "rare_class_auc_ci": 0.00816189362945645,
+      "n_unique_patterns_mean": 137.0,
+      "singleton_fraction_mean": 0.5674999999999999,
+      "median_anon_set_mean": 1.0
+    }
+  ],
+  "random_guess_accuracy": 0.4
+}

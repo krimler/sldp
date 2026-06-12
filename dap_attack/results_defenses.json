@@ -1,0 +1,80 @@
+{
+  "rows": [
+    {
+      "label": "D0 No defense (DAP plaintext, collusion)",
+      "attack_acc_mean": 0.9722222222222223,
+      "attack_acc_ci": 0.032666666666666656,
+      "pop_mse_mean": 0.010545000000000007,
+      "pop_mse_ci": 0.011921155555555557,
+      "retention_mean": 1.0
+    },
+    {
+      "label": "D1 Pad-to-ones",
+      "attack_acc_mean": 0.3833333333333333,
+      "attack_acc_ci": 0.07622222222222222,
+      "pop_mse_mean": 5.935224999999999,
+      "pop_mse_ci": 0.0,
+      "retention_mean": 1.0
+    },
+    {
+      "label": "D2 Pad-to-fixed-pattern",
+      "attack_acc_mean": 0.3833333333333333,
+      "attack_acc_ci": 0.07622222222222222,
+      "pop_mse_mean": 4.559225,
+      "pop_mse_ci": 0.0,
+      "retention_mean": 1.0
+    },
+    {
+      "label": "D3 k-anonymity (k=10)",
+      "attack_acc_mean": NaN,
+      "attack_acc_ci": NaN,
+      "pop_mse_mean": 0.523361836628512,
+      "pop_mse_ci": 0.09773180020811625,
+      "retention_mean": 0.10333333333333333
+    },
+    {
+      "label": "D4 Singleton suppression (k=2)",
+      "attack_acc_mean": 1.0,
+      "attack_acc_ci": 0.0,
+      "pop_mse_mean": 0.04370942747824174,
+      "pop_mse_ci": 0.032793011031535126,
+      "retention_mean": 0.4983333333333333
+    },
+    {
+      "label": "D5 Random bit suppression (delta=0.5)",
+      "attack_acc_mean": 0.5611111111111111,
+      "attack_acc_ci": 0.05444444444444447,
+      "pop_mse_mean": 0.02400664085473115,
+      "pop_mse_ci": 0.027957077265288798,
+      "retention_mean": 1.0
+    },
+    {
+      "label": "D6 SLDP RR eps_s=1.0",
+      "attack_acc_mean": 0.6777777777777778,
+      "attack_acc_ci": 0.04355555555555551,
+      "pop_mse_mean": 0.09611058050253027,
+      "pop_mse_ci": 0.04067400950691547,
+      "retention_mean": 1.0
+    },
+    {
+      "label": "D6 SLDP RR eps_s=0.5",
+      "attack_acc_mean": 0.4722222222222222,
+      "attack_acc_ci": 0.010888888888888903,
+      "pop_mse_mean": 0.2002762170646297,
+      "pop_mse_ci": 0.13461064598487654,
+      "retention_mean": 1.0
+    },
+    {
+      "label": "D6 SLDP RR eps_s=0.25",
+      "attack_acc_mean": 0.34444444444444444,
+      "attack_acc_ci": 0.021777777777777806,
+      "pop_mse_mean": 0.6415326190777086,
+      "pop_mse_ci": 0.36505418153690383,
+      "retention_mean": 1.0
+    }
+  ],
+  "M": 16,
+  "N": 300,
+  "N_TRIALS": 2,
+  "random_guess": 0.4
+}

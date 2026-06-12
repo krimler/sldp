@@ -1,0 +1,17 @@
+[run]
+branch = False
+source = .
+omit =
+    .venv/*
+    tests/*
+    test_compile.tex
+    setup.py
+
+[report]
+exclude_lines =
+    if __name__ == .__main__.:
+    pragma: no cover
+    raise NotImplementedError
+    pass
+show_missing = True
+skip_covered = False

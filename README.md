@@ -1,27 +1,28 @@
-# SLDP rate validation
+# Structural Local Differential Privacy — artifact
 
-Reproduces the empirical structure-MSE rate validation for Structural Local
-Differential Privacy (SLDP). The simulation checks that the debiased
-randomized-response estimator for SLDP-Report attains the theoretical rate
-`Theta(m / (n * eps_s^2))` for structure estimation — i.e. slope `-1` on a
-log-log plot of mean squared error against the number of users `n`.
+Code and results for *On Structural Local Differential Privacy*. Everything is
+seeded and deterministic. The repository has two independent parts.
 
-## Files
+## `dap_attack/`
 
-- `sldp_rate_validation.py` — simulation driver (NumPy + Matplotlib).
-- `rate_validation.pdf` — log-log MSE vs `n`, one curve per `eps_s`.
-- `rate_validation.csv` — raw per-cell results.
+The empirical evaluation. A colluding-aggregator attack on a
+`draft-ietf-ppm-dap-17` deployment recovers device class from structural
+metadata alone (99.0% accuracy), and an SLDP layer on the structure vector
+suppresses it to near random-guess at ε_s = 0.25. Includes nine result scripts
+(every figure and number cited in the paper), a conformance checker against the
+IETF DAP/VDAF drafts, and a pytest suite.
 
-## Usage
+Conformance to the IETF drafts (`draft-ietf-ppm-dap-17`,
+`draft-irtf-cfrg-vdaf-18`, `draft-ietf-ppm-dap-taskprov-03`,
+`draft-thomson-ppm-dap-dp-ext-00`) is documented field-by-field in
+`dap_attack/CONFORMANCE.md`. Build with `make` (see `dap_attack/README.md`).
 
-```
-python sldp_rate_validation.py
-```
+## `rate_validation/`
 
-Requires Python 3.9+, NumPy, and Matplotlib.
+A focused check that the debiased randomized-response estimator attains the
+theoretical structure rate Θ(m / (n·ε_s²)) — slope −1 on a log-log plot of MSE
+against the number of users. See `rate_validation/README.md`.
 
-## Output
+## License
 
-For each privacy budget `eps_s` in `{0.5, 1.0, 2.0}`, the fitted log-log slope is
-within tolerance of the theoretical `-1`, confirming the `Theta(m/(n eps_s^2))`
-rate. Results are written to `rate_validation.pdf` and `rate_validation.csv`.
+Code: MIT. Data and figures: CC-BY 4.0.
