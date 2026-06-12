@@ -1,6 +1,6 @@
 # DAP structural-leakage attack and SLDP defense
 
-Artifact for *On Structural Local Differential Privacy* (CCS '26).
+Artifact for *On Structural Local Differential Privacy*.
 Generates the figures and numbers cited in the paper, plus a test
 suite that checks every mechanism.
 
